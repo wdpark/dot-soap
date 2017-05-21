@@ -1,85 +1,140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Handmade soap|Very good soap| Chemistry Soap</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js One Page Scroll Sites</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
+	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
+	<meta name="Resource-type" content="Document" />
 
 
-<style type="text/css">
-body{margin:0;padding:0;}
-
-.Title-P
-{
-margin:0.0px 0.0px 0.0px 0.0px; text-align:center; font-weight:400;
-}
-.Body-2-P
-{
-margin:0.0px 0.0px 0.0px 0.0px; text-align:center; font-weight:400;
-}
-.Body-1-C
-{
-font-family:"Georgia", serif; font-weight:700; color:#928a70; font-size:13.0px; line-height:1.85em;
-}
-.Title-C
-{
-font-family:"Verela Round", serif; font-weight:700; color:#8a8269; font-size:60.0px; line-height:2.15em;
-}
-.Body-C
-{
-font-family:"Georgia", serif; font-size:13.0px; line-height:1.85em;
-}
-.text_exposed_show-C
-{
-font-family:"Corbel", sans-serif; font-weight:700; color:#ffffff; font-size:16.0px; line-height:1.19em;
-}
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
 
 
-.Button6,.Button6:link,.Button6:visited{background-image:url('images/dolan.png');background-position:0px 0px;text-decoration:none;display:block;position:absolute;}
-.Button6:focus{outline-style:none;}
-.Button6:hover{background-position:0px -60px;}
-.Button6:active{background-position:0px -50px;}
-.Button6 span,.Button6:link span,.Button6:visited span{color:#000000;font-family:Georgia,serif;font-weight:normal;text-decoration:none;text-align:center;text-transform:none;font-style:normal;left:9px;top:8px;width:99px;height:25px;font-size:14px;display:block;position:absolute;cursor:pointer;}
-</style>
+	<style>
 
+		/* Sections
+		 * --------------------------------------- */
+		#section0 img,
+		#section1 img{
+			margin: 20px 0 0 0;
+		}
+		#section2 img{
+			margin: 20px 0 0 52px;
+		}
+		#section3 img{
+			bottom: 0px;
+			position: absolute;
+			margin-left: -420px;
+		}
+		.intro p{
+			width: 50%;
+			margin: 0 auto;
+			font-size: 1.5em;
+		}
+		.twitter-share-button{
+			position: absolute;
+			z-index: 99;
+			right: 149px;
+			top: 9px;
+		}
+
+	</style>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="jquery.min.js"></script>
+	<script src="jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+
+		});
+	</script>
 
 </head>
-
-<body text="#000000" style="background:#f7efde url('images/dolan.png') repeat scroll top center; height:2000px;">
-<div style="background-color:transparent;margin-left:auto;margin-right:auto;position:relative;width:1000px;height:2000px;">
+<body>
 
 
-<!-- top bar buttons -->
 
-<img src="images/dolan.jpg" border="0" width="960" height="8" id="qs_812" alt="" onload="OnLoadPngFix()" style="position:absolute;left:10px;top:186px;">
-
-<a href="index.html" id="btn_55" class="Button6" style="position:absolute;left:50px;top:140px;width:94px;height:40px;"><span>Home</span></a>
-
-<a href="about.html" id="btn_62" class="Button6" style="position:absolute;left:300px;top:140px;width:112px;height:40px;"><span>About&nbsp;Us</span></a>
-
-<a href="product.html" id="btn_64" class="Button6" style="position:absolute;left:550px;top:140px;width:116px;height:40px;"><span>Product</span></a>
-
-<a href="portfolio.html" id="btn_184" class="Button6" style="position:absolute;left:800px;top:140px;width:116px;height:40px;"><span>Portfolio</span></a>
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+</ul>
 
 
-<div style="position:absolute;left:207px;top:21px;width:533px;height:87px;">
-<div class="Title-P">
-<span class="Title-C">dot.</span></div>
+<div id="fullpage">
+	<div class="section " id="section0">
+		<h1>fullPage.js</h1>
+		 <input type="hidden" name="id" value="1" />
+		<p>Create Beautiful Fullscreen Scrolling Websites</p>
+		<img src="images/fullPage.png" alt="fullPage" />
+	</div>
+	<div class="section active" id="section1">
+		<div class="slide">
+			<div class="intro">
+				<h1>Create Sliders</h1>
+				<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
+				<img src="images/slider.png" alt="slider" />
+			</div>
+
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<img src="images/1.png" alt="simple" />
+				<h1>Simple</h1>
+				<p>Easy to use. Configurable and customizable.</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<img src="images/2.png" alt="Cool" />
+				<h1>Cool</h1>
+				<p>It just looks cool. Impress everybody with a simple and modern web design!</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<img src="images/3.png" alt="Compatible" />
+				<h1>Compatible</h1>
+				<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Example</h1>
+			<p>HTML markup example to define 4 sections.</p>
+			<img src="images/example2.png" alt="example" />
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>Working On Tablets</h1>
+			<p>
+				Designed to fit to different screen sizes as well as tablet and mobile devices.
+				<br /><br /><br /><br /><br /><br />
+			</p>
+		</div>
+		<img src="images/tablets.png" alt="tablets" />
+	</div>
 </div>
 
-
-
-<img src="images/dolan.jpg" border="0" width="960" height="1325" id="txt_2" title="" alt="Welcome  &#10;" onload="OnLoadPngFix()" style="position:absolute;left:12px;top:243px;">
-<h1 class="Wp-Body-P"><span class="Body-C"><br></span></h1>
-
-</div>
-
-
-
-
-
-
-
-<center><footer>made by will cuck and co</footer></center>
 </body>
 </html>
