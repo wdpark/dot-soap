@@ -13,7 +13,39 @@
 	<link rel="stylesheet" type="text/css" href="examples.css" />
 
 
+
+
+
 	<style>
+
+	img.two {
+    height: 50%;
+    width: 50%;
+}
+
+
+			table, td, th{
+		    border: 1px solid #404040;
+		    text-align: left;
+		}
+
+		table {
+		    border-collapse: collapse;
+		    width: 30%;
+		}
+
+		th, td {
+		    padding: 15px;
+		}
+
+	.circle {
+	border-radius: 100%;
+	width: 500px;
+	height: 500px;
+	/* width and height can be anything, as long as they're equal */
+}
+
+
 
 		/* Sections
 		 * --------------------------------------- */
@@ -32,11 +64,6 @@
 
 
 	</style>
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
 
 	<script src="jquery.min.js"></script>
 	<script src="jquery-ui.min.js"></script>
@@ -46,7 +73,7 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				sectionsColor: ['#1bbc9b', 'hsl(150, 50%, 50%);', 'hsl(170, 70%, 50%)', 'hsl(190, 90%, 50%)'],
 				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
 				menu: '#menu',
 				scrollingSpeed: 1000
@@ -69,11 +96,17 @@
 
 
 <div id="fullpage">
-	<div class="section " id="section0">
-		<h1>dot.</h1>
-		 <input type="hidden" name="id" value="1" />
-		<p>get clean.</p>
-		<img src="images/fullPage.png" alt="fullPage" />
+	<div class="section" id="section0">
+		<center>
+		<div class="circle" style="background-color: #00e6e6">
+			<br><br><br>
+			<h1><b>dot.</b></h1>
+			<br><br>
+			 <input type="hidden" name="id" value="1" />
+			<p>get clean.</p>
+			<img src="images/soap.png" alt="fullPage" />
+		</div>
+			</center>
 	</div>
 
 
@@ -89,16 +122,17 @@
       <div class="intro">
 			<h1></h1>
       <br>
-			<p>dot. is a friendly company based in Palo Alto, CA</p><br>
-			<img src="images/example2.png" alt="example" />
+			<p>dot. is a <i>very friendly</i> company based in Palo Alto, CA</p><br>
+
+			<img class="two" src="images/business.jpeg" alt="example" width="300" height="300"/>
+
     </div>
 		</div>
     <div class="slide">
       <div class="intro">
       <h1></h1>
       <br>
-      <p>There's a lot of crummy soap out there, and we want to combat that</p><br>
-      <img src="images/example2.png" alt="example" />
+      <p>wtf is our goal?</p><br>
     </div>
     </div>
 
@@ -108,24 +142,57 @@
     <div class="slide">
       <div class="intro">
         <h1>Products</h1>
-        <p>We offer two varieties currently:</p>
+      <img src="images/slider.png" alt="slider" />
       </div>
     </div>
 
-    <div class="slide">
+    <div class="slide" style="background-color: #cc99ff">
       <div class="intro">
-        <img src="images/1.png" alt="lavender" />
-        <!-- chel is a poophead  :^) -->
         <h1>Lavender</h1>
-        <p>Flower power bitch</p>
+				<p>flower power bitch</p>
+				        <img src="images/1.png" alt="lavender" />
+								<br><br><br>
+				<center>
+												<table>
+								  <tr>
+								    <th rowspan="2">image</th>
+										<th>Ingredients</th>
+										<th>Cost</th>
+
+								  </tr>
+								  <tr>
+								    <td>idk???</td>
+								    <td>$$$</td>
+
+								  </tr>
+
+								</table>
+							</center>
       </div>
     </div>
 
-    <div class="slide">
+		<div class="slide" style="background-color: #ffa64d">
       <div class="intro">
-        <img src="images/2.png" alt="citrus" />
         <h1>Citrus</h1>
-        <p>orange you glad soap this good exists?????</p>
+				<p>honey you smell like a naked lemon</p>
+				        <img src="images/1.png" alt="citrus" />
+								<br><br><br>
+				<center>
+												<table>
+								  <tr>
+								    <th rowspan="2">image</th>
+										<th>Ingredients</th>
+										<th>Cost</th>
+
+								  </tr>
+								  <tr>
+								    <td>idk???</td>
+								    <td>$$$</td>
+
+								  </tr>
+
+								</table>
+							</center>
       </div>
     </div>
   </div>
