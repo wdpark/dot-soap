@@ -25,7 +25,7 @@
 
 
 			table, td, th{
-		    border: 1px solid #404040;
+		    border: 0px solid #404040;
 		    text-align: left;
 		}
 
@@ -51,10 +51,10 @@
 		 * --------------------------------------- */
 		#section0 img,
 		#section1 img{
-			margin: 20px 0 0 0;
+			margin: 50px 0 0 0;
 		}
 		#section2 img{
-			margin: 20px 0 0 52px;
+			margin: 50px 0 0 52px;
 		}
 		#section3 img{
 			bottom: 0px;
@@ -73,7 +73,7 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', 'hsl(150, 50%, 50%);', 'hsl(170, 70%, 50%)', 'hsl(190, 90%, 50%)'],
+				sectionsColor: ['#9ac7cb' ,'#9ac7cb','#9ac7cb','#9ac7cb'],
 				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
 				menu: '#menu',
 				scrollingSpeed: 1000
@@ -91,20 +91,19 @@
 	<li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
 	<li data-menuanchor="secondPage"><a href="#secondPage">About Us</a></li>
 	<li data-menuanchor="3rdPage"><a href="#3rdPage">Products</a></li>
-	<li data-menuanchor="4thpage"><a href="#4thpage">Portfolio</a></li>
+	<li data-menuanchor="4thPage"><a href="#4thPage">Questions?</a></li>
 </ul>
 
 
 <div id="fullpage">
 	<div class="section" id="section0">
 		<center>
-		<div class="circle" style="background-color: #00e6e6">
-			<br><br><br>
-			<h1><b>dot.</b></h1>
+		<div class="circle" style="background-color: #ffffff ; font-family: Helvetica , Sans-serif">
 			<br><br>
+			<img src="images/logo.png" alt="fullPage" />
+			<h1>dot.</h1>
 			 <input type="hidden" name="id" value="1" />
-			<p>get clean.</p>
-			<img src="images/soap.png" alt="fullPage" />
+			<p>get clean</p>
 		</div>
 			</center>
 	</div>
@@ -118,21 +117,30 @@
       <img src="images/slider.png" alt="slider" />
     </div>
 		</div>
+
     <div class="slide">
-      <div class="intro">
-			<h1></h1>
-      <br>
-			<p>dot. is a <i>very friendly</i> company based in Palo Alto, CA</p><br>
-
-			<img class="two" src="images/business.jpeg" alt="example" width="300" height="300"/>
-
+      <div class="intro"><br><br>
+			<p style="line-height: 40px">As a group of friends, we thought about how we took our sanitation for granted. A majority of the world does not have access to soap because there are more issues at hand. Cleanliness is one of the most hidden, but biggest problems that exist across the globe, so in order to give people a hand, we decided made a small startup to create a soap that is accessible and impacting to all. </p>
+			<br><br>
+			<p style="line-height: 40px"><b>dot.</b> was founded by a group of former AP Chemistry students that wanted to put their newfound skills to use and benefit their community. They put together the most creative minds to bring you a quality soap that suits your home and lifestyle!</p>
     </div>
 		</div>
+
+
+		<div class="slide">
+			<div class="intro">
+			<br>
+			<p>Here we are!</p><br>
+			<img class="two" src="images/company.jpeg" alt="example" width="300" height="300"/>
+		</div>
+		</div>
+
+
     <div class="slide">
       <div class="intro">
       <h1></h1>
       <br>
-      <p>wtf is our goal?</p><br>
+      <p><b>Our mission: To deliver relaxation through a cleanse that appeals in the physical as well as the olfactory sense, all the while keeping pace with the speed of life.</b></p><br>
     </div>
     </div>
 
@@ -146,48 +154,56 @@
       </div>
     </div>
 
-    <div class="slide" style="background-color: #cc99ff">
-      <div class="intro">
+    <div class="slide" style="background-color: #ffccff">
+			<div class="intro">
+								<img src ="images/lavender.png"  width="400" height="120">
         <h1>Lavender</h1>
-				<p>flower power bitch</p>
-				        <img src="images/1.png" alt="lavender" />
-								<br><br><br>
+				<br><br>
 				<center>
 												<table>
 								  <tr>
-								    <th rowspan="2">image</th>
-										<th>Ingredients</th>
-										<th>Cost</th>
+								    <th rowspan="2"><img src ="images/lavender_soap.png" width="300" height="250"></th>
+										<td> </td>
+										<th>Ingredients:</th>
+										<td> </td>
+										<th>Price:</th>
 
 								  </tr>
 								  <tr>
-								    <td>idk???</td>
-								    <td>$$$</td>
+										<td> </td>
+								    <td>Coconut Oil, Canola Oil, Lye, Lavender Buds</td>
+										<td> </td>
+								    <td>$1.00</td>
+
 
 								  </tr>
+
 
 								</table>
 							</center>
       </div>
     </div>
 
-		<div class="slide" style="background-color: #ffa64d">
+		<div class="slide" style="background-color: #fbba50">
       <div class="intro">
+								<img src ="images/citrus.png">
         <h1>Citrus</h1>
-				<p>honey you smell like a naked lemon</p>
-				        <img src="images/1.png" alt="citrus" />
-								<br><br><br>
+				<br><br>
 				<center>
 												<table>
 								  <tr>
-								    <th rowspan="2">image</th>
-										<th>Ingredients</th>
-										<th>Cost</th>
+								    <th rowspan="2"><img src ="images/citrus_soap.png" width="300" height="250"></th>
+										<td> </td>
+										<th>Ingredients:</th>
+										<td> </td>
+										<th>Price:</th>
 
 								  </tr>
 								  <tr>
-								    <td>idk???</td>
-								    <td>$$$</td>
+										<td> </td>
+								    <td>Coconut Oil, Canola Oil, Lye, Lemon Zest</td>
+										<td> </td>
+								    <td>$1.00</td>
 
 								  </tr>
 
@@ -197,18 +213,17 @@
     </div>
   </div>
 
-
-	<div class="section" id="section3">
-		<div class="intro">
-			<h1>Portfolio</h1>
-			<p>
-				Mrs. Zizmor please give us an A++ we worked really really hard
-				<br>
-        <a href="https://drive.google.com/drive/folders/0B-AD1NRPU_FaZ00zelRDbGl0bkk?usp=sharing">here's the link</a>
-			</p>
+	<div class="section" id="section0">
+		<center>
+			<br><br>
+			<img src="images/logo.png" alt="fullPage" />
+			<h1>Questions?</h1>
+			 <input type="hidden" name="id" value="1" />
+			<p>Contact us through question@soapbydot.com or tweet us at @dot_soap</p>
 		</div>
-
+			</center>
 	</div>
+
 </div>
 
 </body>
