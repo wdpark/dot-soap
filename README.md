@@ -7,3 +7,4 @@ Instructions to open website locally:
 3) Click the "Download ZIP" option
 4) Next, double-click the zip file to open the main folder
 5) Locate the file called "index.html" and double-click it
+(if step 5 doesn't open it, right click the file and select "Open with" and then the web browser of choice)
